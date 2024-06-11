@@ -1,10 +1,10 @@
 ﻿@{
     Items = @(
         @{
-            Name = 'A_B'
+            Name = 'AA-B'
         }
         @{
-            Name = 'AA_B'
+            Name = 'A-B'
         }
     )
 }
