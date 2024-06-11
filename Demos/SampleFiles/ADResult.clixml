@@ -1,0 +1,270 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Selected.Microsoft.ActiveDirectory.Management.ADUser</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="GivenName">Butters</S>
+      <S N="Surname">Stotch</S>
+      <S N="DisplayName">Butters Stotch</S>
+      <S N="SamAccountName">ButtersStotch</S>
+      <Obj N="MyCustomProperty" RefId="1">
+        <TN RefId="1">
+          <T>Microsoft.ActiveDirectory.Management.ADPropertyValueCollection</T>
+          <T>System.Collections.CollectionBase</T>
+          <T>System.Object</T>
+        </TN>
+        <LST />
+      </Obj>
+    </MS>
+  </Obj>
+  <Obj RefId="2">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="GivenName">Wendy</S>
+      <S N="Surname">Testaburger</S>
+      <S N="DisplayName">Wendy Testaburger</S>
+      <S N="SamAccountName">WendyTestaburger</S>
+      <Obj N="MyCustomProperty" RefId="3">
+        <TNRef RefId="1" />
+        <LST />
+      </Obj>
+    </MS>
+  </Obj>
+  <Obj RefId="4">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="GivenName">Annie</S>
+      <S N="Surname">Knitts</S>
+      <S N="DisplayName">Annie Knitts</S>
+      <S N="SamAccountName">AnnieKnitts</S>
+      <Obj N="MyCustomProperty" RefId="5">
+        <TNRef RefId="1" />
+        <LST />
+      </Obj>
+    </MS>
+  </Obj>
+  <Obj RefId="6">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="GivenName">Bebe</S>
+      <S N="Surname">Stevens</S>
+      <S N="DisplayName">Bebe Stevens</S>
+      <S N="SamAccountName">BebeStevens</S>
+      <Obj N="MyCustomProperty" RefId="7">
+        <TNRef RefId="1" />
+        <LST />
+      </Obj>
+    </MS>
+  </Obj>
+  <Obj RefId="8">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="GivenName">Bradley</S>
+      <S N="Surname">Biggie</S>
+      <S N="DisplayName">Bradley Biggie</S>
+      <S N="SamAccountName">BradleyBiggie</S>
+      <Obj N="MyCustomProperty" RefId="9">
+        <TNRef RefId="1" />
+        <LST />
+      </Obj>
+    </MS>
+  </Obj>
+  <Obj RefId="10">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="GivenName">Craig</S>
+      <S N="Surname">Tucker</S>
+      <S N="DisplayName">Craig Tucker</S>
+      <S N="SamAccountName">CraigTucker</S>
+      <Obj N="MyCustomProperty" RefId="11">
+        <TNRef RefId="1" />
+        <LST />
+      </Obj>
+    </MS>
+  </Obj>
+  <Obj RefId="12">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="GivenName">Clyde</S>
+      <S N="Surname">Donovan</S>
+      <S N="DisplayName">Clyde Donovan</S>
+      <S N="SamAccountName">ClydeDonovan</S>
+      <Obj N="MyCustomProperty" RefId="13">
+        <TNRef RefId="1" />
+        <LST />
+      </Obj>
+    </MS>
+  </Obj>
+  <Obj RefId="14">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="GivenName">David</S>
+      <S N="Surname">Rodriguez</S>
+      <S N="DisplayName">David Rodriguez</S>
+      <S N="SamAccountName">DavidRodriguez</S>
+      <Obj N="MyCustomProperty" RefId="15">
+        <TNRef RefId="1" />
+        <LST />
+      </Obj>
+    </MS>
+  </Obj>
+  <Obj RefId="16">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="GivenName">DogPoo</S>
+      <S N="Surname">Petuski</S>
+      <S N="DisplayName">DogPoo Petuski</S>
+      <S N="SamAccountName">DogPooPetuski</S>
+      <Obj N="MyCustomProperty" RefId="17">
+        <TNRef RefId="1" />
+        <LST />
+      </Obj>
+    </MS>
+  </Obj>
+  <Obj RefId="18">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="GivenName">Heidi</S>
+      <S N="Surname">Turner</S>
+      <S N="DisplayName">Heidi Turner</S>
+      <S N="SamAccountName">HeidiTurner</S>
+      <Obj N="MyCustomProperty" RefId="19">
+        <TNRef RefId="1" />
+        <LST />
+      </Obj>
+    </MS>
+  </Obj>
+  <Obj RefId="20">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="GivenName">Jenny</S>
+      <S N="Surname">Simons</S>
+      <S N="DisplayName">Jenny Simons</S>
+      <S N="SamAccountName">JennySimons</S>
+      <Obj N="MyCustomProperty" RefId="21">
+        <TNRef RefId="1" />
+        <LST />
+      </Obj>
+    </MS>
+  </Obj>
+  <Obj RefId="22">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="GivenName">Tolkien</S>
+      <S N="Surname">Black</S>
+      <S N="DisplayName">Tolkien Black</S>
+      <S N="SamAccountName">TolkienBlack</S>
+      <Obj N="MyCustomProperty" RefId="23">
+        <TNRef RefId="1" />
+        <LST />
+      </Obj>
+    </MS>
+  </Obj>
+  <Obj RefId="24">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="GivenName">Timmy</S>
+      <S N="Surname">Burch</S>
+      <S N="DisplayName">Timmy Burch</S>
+      <S N="SamAccountName">TimmyBurch</S>
+      <Obj N="MyCustomProperty" RefId="25">
+        <TNRef RefId="1" />
+        <LST />
+      </Obj>
+    </MS>
+  </Obj>
+  <Obj RefId="26">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="GivenName">Stan</S>
+      <S N="Surname">Marsh</S>
+      <S N="DisplayName">Stan Marsh</S>
+      <S N="SamAccountName">StanMarsh</S>
+      <Obj N="MyCustomProperty" RefId="27">
+        <TNRef RefId="1" />
+        <LST />
+      </Obj>
+    </MS>
+  </Obj>
+  <Obj RefId="28">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="GivenName">Kyle</S>
+      <S N="Surname">Broflovski</S>
+      <S N="DisplayName">Kyle Broflovski</S>
+      <S N="SamAccountName">KyleBroflovski</S>
+      <Obj N="MyCustomProperty" RefId="29">
+        <TNRef RefId="1" />
+        <LST />
+      </Obj>
+    </MS>
+  </Obj>
+  <Obj RefId="30">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="GivenName">Eric</S>
+      <S N="Surname">Cartman</S>
+      <S N="DisplayName">Eric Cartman</S>
+      <S N="SamAccountName">EricCartman</S>
+      <Obj N="MyCustomProperty" RefId="31">
+        <TNRef RefId="1" />
+        <LST />
+      </Obj>
+    </MS>
+  </Obj>
+  <Obj RefId="32">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="GivenName">Kenny</S>
+      <S N="Surname">McCormick</S>
+      <S N="DisplayName">Kenny McCormick</S>
+      <S N="SamAccountName">KennyMcCormick</S>
+      <Obj N="MyCustomProperty" RefId="33">
+        <TNRef RefId="1" />
+        <LST />
+      </Obj>
+    </MS>
+  </Obj>
+  <Obj RefId="34">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="GivenName">Ike</S>
+      <S N="Surname">Broflovski</S>
+      <S N="DisplayName">Ike Broflovski</S>
+      <S N="SamAccountName">IkeBroflovski</S>
+      <Obj N="MyCustomProperty" RefId="35">
+        <TNRef RefId="1" />
+        <LST />
+      </Obj>
+    </MS>
+  </Obj>
+  <Obj RefId="36">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="GivenName">Karen</S>
+      <S N="Surname">McCormick</S>
+      <S N="DisplayName">Karen McCormick</S>
+      <S N="SamAccountName">KarenMcCormick</S>
+      <Obj N="MyCustomProperty" RefId="37">
+        <TNRef RefId="1" />
+        <LST />
+      </Obj>
+    </MS>
+  </Obj>
+  <Obj RefId="38">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="GivenName">Shelly</S>
+      <S N="Surname">Marsh</S>
+      <S N="DisplayName">Shelly Marsh</S>
+      <S N="SamAccountName">ShellyMarsh</S>
+      <Obj N="MyCustomProperty" RefId="39">
+        <TNRef RefId="1" />
+        <LST />
+      </Obj>
+    </MS>
+  </Obj>
+</Objs>
