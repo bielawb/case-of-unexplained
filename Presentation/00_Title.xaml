@@ -10,15 +10,22 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
             <RowDefinition Height="4*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <TextBlock Grid.Column="1" Margin="10" TextAlignment="Center" FontFamily="Anonymous Pro for PowerLine" FontSize="100" TextWrapping="WrapWithOverflow" VerticalAlignment="Center">
+        <Image Grid.Column="1" Source="Media/PSConfEU-Logo.png" HorizontalAlignment="Right" />
+        <TextBlock Grid.Column="1" Grid.Row="1" Margin="10" TextAlignment="Center" FontFamily="CaskaydiaCove Nerd Font Mono" FontSize="100" TextWrapping="WrapWithOverflow" VerticalAlignment="Center">
             <TextBlock.Effect>
                 <DropShadowEffect Direction="-45" Color="#FFB6C2CB" ShadowDepth="10" BlurRadius="14" />
             </TextBlock.Effect>
             Case of Unexplained:<LineBreak/>2024
         </TextBlock>
-        <Image Grid.Column="0" Grid.RowSpan="2" Source="Media/Kamyki.jpg" />
+        <Image Grid.Column="1" Grid.Row="2" Source="Media/Antwerp24.png" HorizontalAlignment="Right" Height="100" />
+        <Image Grid.Column="0" Grid.RowSpan="3" Source="Media/stonehenge.png">
+            <Image.Effect>
+                <DropShadowEffect Direction="-45" Color="#FFB6C2CB" ShadowDepth="10" BlurRadius="14" />
+            </Image.Effect>
+        </Image>
     </Grid>
 </Window>

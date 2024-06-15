@@ -10,22 +10,25 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
             <RowDefinition Height="4*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <TextBlock Grid.Column="1" Margin="10" TextAlignment="Center" FontFamily="Anonymous Pro for PowerLine" FontSize="150" TextWrapping="WrapWithOverflow" VerticalAlignment="Center">
+        <Image Grid.Column="1" Source="Media/PSConfEU-Logo.png" HorizontalAlignment="Right" />
+        <TextBlock Grid.Column="1" Grid.Row="1" Margin="10" TextAlignment="Center" FontFamily="CaskaydiaCove Nerd Font Mono" FontSize="150" TextWrapping="WrapWithOverflow" VerticalAlignment="Center">
             <TextBlock.Effect>
                 <DropShadowEffect ShadowDepth="10" Direction="330" Color="Black" Opacity="0.5" BlurRadius="4"/>
             </TextBlock.Effect>
             <TextBlock.Text>Q&#160;&amp;&#160;A</TextBlock.Text>
         </TextBlock>
-        <Image Grid.Column="0" Grid.Row="0" Grid.RowSpan="2" Source="Media/QA.png" >
+        <Image Grid.Column="0" Grid.Row="0" Grid.RowSpan="3" Source="Media/QA.png" >
             <Image.Effect>
                 <DropShadowEffect Direction="-45" Color="#FFB6C2CB" ShadowDepth="10" BlurRadius="14" />
             </Image.Effect>
         </Image>
-        <TextBlock Grid.Column="1" Grid.Row="1" FontSize="20" TextAlignment="Center" FontFamily="Anonymous Pro for PowerLine Italic" Margin="30,30,30,30">
+        <TextBlock Grid.Column="1" Grid.Row="2" FontSize="30" TextAlignment="Left" FontFamily="CaskaydiaCove Nerd Font Mono Italic" Margin="30,30,30,30">
         Case of Unexplained: 2024
         </TextBlock>
+        <Image Grid.Column="1" Grid.Row="2" Source="Media/Antwerp24.png" HorizontalAlignment="Right" Height="100" />
     </Grid>
 </Window>
