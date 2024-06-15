@@ -1,9 +1,10 @@
-<#
-TODO:
-    - get xml from a VM
-    - finish samples
-#>
 # Demo in the VM... Exported results:
+Enter-PSSession -ComputerName 192.168.56.10 -Credential igo\admin
+
+Get-ADUser -Filter { Company -eq 'SouthPark' } -Properties * |
+    Select-Object -Property GivenName, Surname, DisplayName, CustomParameter |
+    ConvertTo-Csv
+
 $objects = Import-Clixml -Path .\SampleFiles\ADResult.clixml
 
 $objects | ConvertTo-Json
