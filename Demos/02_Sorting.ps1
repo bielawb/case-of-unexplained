@@ -1,11 +1,17 @@
 git status
-Import-Module .\SampleFiles\SampleFiles.psm1
+Import-Module -Name .\SampleFiles\SampleFiles.psm1
 Export-PowerShellDataFile -Data (
         Import-PowerShellDataFile -Path SampleFiles\02_sort_test.psd1
     ) -Path SampleFiles\02_sort_test.psd1
 git status
+git diff
+git checkout -- SampleFiles\02_sort_test.psd1
 
-'aa', 'a-' | Sort-Object
-'a-b', 'aa' | Sort-Object
+Get-Content -Path .\SampleFiles\SortScript.ps1
 
-Start-Process -FilePath https://github.com/PowerShell/PowerShell/issues/3425
+.\SampleFiles\SortScript.ps1
+
+pwsh.exe -noprofile -file .\SampleFiles\SortScript.ps1
+
+Invoke-RestMethod https://api.github.com/repos/PowerShell/PowerShell/issues/3425 |
+    Format-List -Property state, title, body
