@@ -3,5 +3,4 @@
 
 Folders:
 - Presentation - XAML "slides" and all the pictures
-- PPT - PowerPoint presentation
 - Demos - scripts used in the demos
