@@ -54,4 +54,10 @@ $stopCommand = (Get-Command Import-ADObjectEx).ScriptBlock.Ast.FindAll(
     },
     $true
 )
-    
+
+$stopCommand[0].Extent.StartLineNumber
+
+Get-Command -Name Import-ADObjectEx |
+    ForEach-Object -Process { $_.ScriptBlock.ToString() -split '\n' } |
+    Select-String -Pattern .* |
+    Select-Object -Property LineNumber, Line
