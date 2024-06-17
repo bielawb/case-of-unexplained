@@ -20,7 +20,7 @@
             <TextBlock.Effect>
                 <DropShadowEffect Direction="-45" Color="#FFB6C2CB" ShadowDepth="10" BlurRadius="14" />
             </TextBlock.Effect>
-            DEMO 1: ActiveDirectory module makes up things
+            Mystery 1: ActiveDirectory module makes up things
         </TextBlock>
         <Image Grid.Row="1" Grid.ColumnSpan="3" Source="../Presentation/Media/stonehenge_flat.png" >
              <Image.Effect>

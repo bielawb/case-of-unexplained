@@ -11,8 +11,6 @@ function Get-LogPath {
         There is a lot of code here...
         Imagine pages, and pages of code...
 
-
-
     #>
 
     foreach ($item in 1..20) {
