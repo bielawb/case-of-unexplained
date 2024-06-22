@@ -1,3 +1,4 @@
+# Problem: re-factoring breaks the code with weird error message...
 function Import-ADObject {
     [CmdletBinding()]
     param (
@@ -13,6 +14,7 @@ function Import-ADObject {
     }
 }
 
+# Splatting FTW!
 function Import-ADObjectEx {
     [CmdletBinding()]
     param (
@@ -32,6 +34,9 @@ function Import-ADObjectEx {
     }
 }
 
+# Where is the stop located...?
+
+# Solution - AST to the rescue! Lets find ALL commands first...
 $allCommands = (Get-Command Import-ADObjectEx).ScriptBlock.Ast.FindAll(
     {
         param (
@@ -43,6 +48,9 @@ $allCommands = (Get-Command Import-ADObjectEx).ScriptBlock.Ast.FindAll(
     $true
 )
 
+$allCommands | Format-Table
+
+# Easy to find here, but if we have way more commands...? We can filter even more!
 $stopCommand = (Get-Command Import-ADObjectEx).ScriptBlock.Ast.FindAll(
     {
         param (
@@ -55,9 +63,13 @@ $stopCommand = (Get-Command Import-ADObjectEx).ScriptBlock.Ast.FindAll(
     $true
 )
 
+$stopCommand
 $stopCommand[0].Extent.StartLineNumber
 
+# A trick to get LineNumbers for a function in the memory...
 Get-Command -Name Import-ADObjectEx |
     ForEach-Object -Process { $_.ScriptBlock.ToString() -split '\n' } |
     Select-String -Pattern .* |
     Select-Object -Property LineNumber, Line
+
+# Solution - make sure to use quotes where needed whenever converting to splatting

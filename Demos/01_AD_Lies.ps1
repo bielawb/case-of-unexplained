@@ -12,13 +12,13 @@ Get-ADUser -Filter { Company -eq 'SouthPark' } -Properties * |
 
 $ad | ConvertTo-Json
 
+# Fix? We need to make sure we assing a value to the property...
+
+Get-ADUser -Filter { Company -eq 'SouthPark' } -Properties * |
+    Select-Object -Property GivenName, Surname, DisplayName, @{
+        Name = 'CustomParameter'
+        Expression = { $null }
+    } |
+    ConvertTo-Csv
+
 Exit-PSSession
-
-#region Demo in the VM... Exported results:
-
-$objects = Import-Clixml -Path .\SampleFiles\ADResult.clixml
-
-$objects | ConvertTo-Json
-$objects | ConvertTo-Csv
-Get-Content -Path .\SampleFiles\result.csv
-#endregion

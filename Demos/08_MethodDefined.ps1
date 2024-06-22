@@ -1,3 +1,4 @@
+# Problem: using methods in the if statement can produce unexpected results
 class Employee {
     [string]$Login
     [bool]$Mailbox
@@ -13,6 +14,7 @@ class Employee {
     }
 }
 
+# Lets create instance of object that should *not* be Leaver Process Complete
 $me = [Employee]@{
     Login = 'bielawb'
     Mailbox = $true
@@ -20,6 +22,7 @@ $me = [Employee]@{
     VDI = $false
 }
 
+# Using if, accessing method, wrong result...
 if ($me.LeaverProcessComplete) {
     '{0} is complete! Despite {1} being true...' -f @(
         $me.Login,
@@ -27,6 +30,7 @@ if ($me.LeaverProcessComplete) {
     )
 }
 
+# Displaying method definition vs. calling that method
 $me.LeaverProcessComplete
 [bool]$me.LeaverProcessComplete
 [bool]$me.LeaverProcessComplete()
@@ -35,3 +39,5 @@ $me.LeaverProcessComplete
     Mailbox = $false
     HomeFolder = $false
 } | ForEach-Object -MemberName LeaverProcessComplete
+
+# Solution: make sure you call a method to get a proper result!

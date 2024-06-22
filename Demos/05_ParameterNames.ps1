@@ -1,3 +1,4 @@
+# Problem: automatic variables can often be used, but can cause collisions/ issues!
 function Set-FCPort {
     param (
         $Switch,
@@ -5,8 +6,8 @@ function Set-FCPort {
         $ConnectedDevice,
         $ConnectedPort,
         [ValidateSet(
-            'Enabled',
-            'Disabled'
+                'Enabled',
+                'Disabled'
         )]
         $State
     )
@@ -29,4 +30,8 @@ function Set-FCPort {
     }
 }
 
+# Running function - we get type of automatic variable $switch...
 Set-FCPort -Switch psconf_fc_01 -Port 20 -State Enabled -ConnectedDevice psconf_esxi_01 -ConnectedPort P1
+
+# How to avoid?
+Get-Help about_automatic_variables
