@@ -28,3 +28,5 @@ $value | Get-Member -MemberType NoteProperty
 } | ConvertTo-Json
 
 # Pick your poison!
+# Alternatively... use PowerShell 7:
+pwsh.exe -noprofile -file .\SampleFiles\GetContentJson.ps1

@@ -10,7 +10,6 @@ function Import-ADObject {
         Import-Clixml -Path $Path -ErrorAction Stop
     } catch {
         Write-Log -ErrorRecord $_ -Message "Failed to import file: $Path"
-        throw
     }
 }
 
@@ -33,6 +32,9 @@ function Import-ADObjectEx {
         throw
     }
 }
+
+# Running function results in an error
+Import-ADObjectEx -Path .\SampleFiles\ADResult.clixml
 
 # Where is the stop located...?
 

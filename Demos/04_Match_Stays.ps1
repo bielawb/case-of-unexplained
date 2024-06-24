@@ -11,6 +11,7 @@ Get-Content .\SampleFiles\sample_log.txt | ForEach-Object {
     }
 }
 
+# Lets see how $Matches ignores everything except successful -match and won't change even when it fails
 Select-String -Pattern $pattern -Path .\SampleFiles\sample_log.txt
 'this' -match 'that'
 $Matches
