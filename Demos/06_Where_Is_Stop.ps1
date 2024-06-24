@@ -29,9 +29,11 @@ function Import-ADObjectEx {
         Import-Clixml @splat
     } catch {
         Write-Log -ErrorRecord $_ -Message "Failed to import file: $Path"
-        throw
     }
 }
+
+# Original works just fine...
+Import-ADObject -Path .\SampleFiles\ADResult.clixml
 
 # Running function results in an error
 Import-ADObjectEx -Path .\SampleFiles\ADResult.clixml
